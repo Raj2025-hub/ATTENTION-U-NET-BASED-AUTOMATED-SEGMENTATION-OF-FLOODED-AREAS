@@ -20,13 +20,14 @@ Displays each test image alongside its predicted segmentation mask using Matplot
 Code Usage
 Make sure you have the following dependencies installed:
 
-OpenCV (cv2)
-NumPy
-Matplotlib
-TensorFlow or Keras (for model loading and prediction)
+*OpenCV (cv2)
+*NumPy
+*Matplotlib
+*TensorFlow or Keras (for model loading and prediction)
 Update the image path in the code if your images are located elsewhere.
 
 Python
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -63,7 +64,9 @@ for i in range(len(img_test)):
     plt.title(f"Prediction {i+1}")
     plt.axis('off')
     plt.tight_layout()
-Notes
+```
+#**Notes**
+
 Replace /path/to/your/images/*.jpg with the actual path to your image files.
 Ensure your model variable (model) is defined and loaded with the trained Attention U-Net weights.
 Adjust the number of images to load and display as needed.
